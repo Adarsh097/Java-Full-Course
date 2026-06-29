@@ -2,6 +2,10 @@ public class Demo {
     public static void main(String[] args) {
         float f = 0.7f;
 
-        System.out.printf("%.20f%n",f);
+        System.out.printf("%.2f%n",f);
+
+        float sum = 13.4442f;
+
+        System.out.printf("%.3f%n",sum);
     }
 }

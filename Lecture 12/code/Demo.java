@@ -18,6 +18,18 @@ public class Demo {
 
         s1.print();
         s2.print();
+
+
+
+        Person p1 = new Person();
+        p1.name = "Aditya";
+        p1.age = 28;
+        p1.height = 1.75f;
+        p1.weight = 70.0f;
+
+        p1.print();
+        System.out.println("BMI of " + p1.name + " is " + p1.calculateBMI());
+        System.out.println("Age of " + p1.name + " is " + p1.getAge());
     }
 }
 
@@ -38,4 +50,24 @@ class Student {
 
 // Java is almost complete object oriented programming
 
+
+class Person {
+    String name;
+    int age;
+    float height;
+    float weight;
+
+    void print(){
+        System.out.println(name + " , " + age + " , " + height + " , " + weight);
+    }
+
+    double calculateBMI() {
+        return weight / (height * height);
+    }
+
+    int getAge() {
+        return age;
+    }
+
+}
 

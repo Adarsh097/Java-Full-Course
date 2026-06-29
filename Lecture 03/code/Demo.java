@@ -26,6 +26,10 @@ public class Demo {
         System.out.println("Character values --> " + c);
         System.out.println("Boolean values --> " + bool);
 
+        int num1 = 10;
+        int num2 = 0XA; // hexadecimal
+        System.out.println("num1 --> " + num1);
+        System.out.println("num2 --> " + num2);
          
     } 
 }
